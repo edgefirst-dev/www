@@ -3,7 +3,7 @@ import { URLPattern } from "urlpattern-polyfill";
 export default function redirects(url: URL): Array<Redirect> {
 	return [
 		{
-			source: new URLPattern("/home", url.toString()),
+			source: new URLPattern("/starter", url.toString()),
 			destination: "/",
 			permanent: false,
 		},
